@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* ------ 1rem = 10px ----- */
+    /* 16px is default font size */
+    /* 10 / 16 = 0.625 */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #444;
+    /* This will not work if there is anything absolute with relative to body */
+}
+
+.heading-primary {
+    font-size: 6.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.8rem;
+    font-weight: 500;
+    /* Temp margin because of ::after */
+    margin-bottom: 6.4rem;
+    position: relative;
+}
+
+.heading-secondary::after {
+    content: "";
+    position: absolute;
+    width: 6.4rem;
+    height: 0.3rem;
+    background-color: #c29a36;
+    left: 0;
+    bottom: -1.6rem;
+    border-radius: 50px;
+}
+
+.heading-tertiary {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.heading-quaternary {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #444;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    color: #fff;
+    background-color: #CDA94D;
+    transition: all 0.3s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    color: #fff;
+    background-color: #c29a36;
+}
+
+/* ------------------------------- NAVIGATION ------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.6rem 0;
+}
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+.nav-item:link,
+.nav-item:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #444;
+    padding-bottom: 1.2rem;
+    transition: border-bottom 0.1s;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    border-bottom: 3px solid #CDA94D;
+}
+
+/* ------------------------------ SECTION HERO ------------------------------ */
+
+.hero {
+    padding: 7.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    width: 49.4rem;
+    margin-bottom: 3.4rem;
+}
+
+/* --------------------------- SECTION DESTINATION -------------------------- */
+
+.destinations {
+    display: flex;
+}
+
+.left-box, .right-box {
+    padding: 4.8rem 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    background-color: #FFE8CC;
+}
+
+.left-box {
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    /* border-right: 1px solid #c29a36; */
+}
+
+.left-box::after {
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    height: 6.4rem;
+    background-color: #c29a36;
+    right: 0;
+}
+
+.right-box {
+    border-radius: 0px 20px 20px 0px;
+    /* border-left: 1px solid #c29a36; */
+}
+
+/* ---------------------------- SECTION ABOUT US ---------------------------- */
+
+.section-about {
+    padding: 10.8rem 0;
+}
+
+.about-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-feature {
+    width: 31.1rem;
+}
+
+.about-icon {
+    font-size: 4.8rem;
+    color: #c29a36;
+    margin-bottom: 3.2rem;
+}
+
+.about-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-top: 1.6rem;
+}
+
+/* -------------------------- SECTION TESTIMONIALS -------------------------- */
+
+.section-testimonials {
+    padding-bottom: 10.8rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial {
+    background-color: #FFE8CC;
+    width: 56.8rem;
+    border-radius: 12px;
+    padding: 3.2rem;
+}
+
+.testimonial-identity {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial-img {
+    height: 6.4rem;
+}
+
+.testimonial-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: #495057;
+}
+
+.testimonial-designation {
+    font-size: 1.4rem;
+    color: #868E96;
+}
+
+.testimonial-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* ----------------------------- SECTION EUROPE ----------------------------- */
+.section-europe {
+    padding-bottom: 5.4rem;
+}
+
+.destinations-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+}
+
+.destination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+.destination-text {
+    width: 60%;
+}
+.distination-title {
+
+}
+.distination-discription {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.ellipsis {
+    display: inline;
+}
+.more-discription {
+    display: none;
+}
+.learn-more:link,
+.learn-more:visited {
+    font-size: 18px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #CDA94D;
+    display: inline-block;
+    margin-top: 2.4rem;
+    border-bottom: 1px solid #cda94d00;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.learn-more:hover,
+.learn-more:active {
+    color: #c29a36;
+    border-bottom: 1px solid #c29a36;
+}
+
+.destination-image {
+    width: 30%;
+}
+
+/* --------------------------- SECTION SOUTH ASIA --------------------------- */
+
+.section-south-asia {
+    padding: 5.4rem 0;
+    background-color: #f8f9fa;
+}
+
