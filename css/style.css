@@ -312,3 +312,38 @@ body {
     background-color: #f8f9fa;
 }
 
+/* --------------------------- SECTION CONTACT US --------------------------- */
+
+.section-contact-us {
+    padding: 10.8rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.contact-form--group {
+    
+}
+
+.contact-form--label {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.contact-form--input {
+    font-size: 1.8rem;
+    padding: 1.4rem 1.6rem;
+    outline: none;
+    border: 1px solid #CDA94D;
+    width: 48.8rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+}
+
