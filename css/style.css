@@ -347,3 +347,34 @@ body {
     -o-border-radius: 0.8rem;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding-bottom: 6.4rem;
+}
+
+.contact-info--group {
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.contact-info--icon {
+    padding: 1.2rem;
+    font-size: 2.4;
+    color: #fff;
+    background-color: #CDA94D;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.contact-box {
+    display: flex;
+    gap: 18rem;
+    align-items: center;
+}
