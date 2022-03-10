@@ -378,3 +378,91 @@ body {
     gap: 18rem;
     align-items: center;
 }
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+.section-footer {
+    padding: 4.8rem 0;
+    background-color: #f8f9fa;
+}
+
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+    font-size: 2.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 4.8rem;
+}
+
+.social-links a:link,
+.social-links a:visited {
+    color: #888;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.social-links a:hover,
+.social-links a:active {
+    color: #444;
+}
+
+/* .footer-icons {
+    color: #868E96;
+} */
+
+.footer-text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.footer-cols {
+
+}
+
+.footer-col {
+    font-size: 1.8rem;
+}
+
+.footer-col--title {
+    font-weight: 500; 
+    margin-bottom: 3.2rem;
+}
+
+.footer-col--links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-col--links a:link,
+.footer-col--links a:visited {
+    text-decoration: none;
+    color: #444;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.footer-col--links a:hover,
+.footer-col--links a:active {
+    color: #222;
+}
+
+.footer-cols {
+    display: flex;
+    gap: 8.8rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
