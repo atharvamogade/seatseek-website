@@ -375,7 +375,7 @@ body {
 
 .contact-box {
     display: flex;
-    gap: 18rem;
+    gap: 15%;
     align-items: center;
 }
 
